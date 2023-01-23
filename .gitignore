@@ -1,3 +1,4 @@
+# macOS
 .DS_Store
 
 # Byte-compiled / optimized / DLL files
@@ -129,3 +130,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Files containing sensitive info
+secrets.sh
+ubuntu@*
