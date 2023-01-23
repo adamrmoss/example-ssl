@@ -10,6 +10,7 @@ Environment="LANGUAGE=en_US.UTF-8:"
 WorkingDirectory=/home/ubuntu/example-ssl/
 ExecStart=/bin/bash -c "source secrets.sh\
 && source env/bin/activate\
+&& sudo certbot certonly --webroot -w ~/example-ssl/validated-certs -d hb-example-ssl.com
 && python3 server.py &>> flask.log"
 Restart=always
 
